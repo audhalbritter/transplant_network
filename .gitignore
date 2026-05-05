@@ -1,3 +1,5 @@
+.DS_Store
+
 # History files
 .Rhistory
 .Rapp.history
@@ -39,8 +41,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
+# This repo uses docs/ for GitHub Pages. (Do not gitignore docs/ or the site never reaches GitHub.)
 
 # translation temp files
 po/*~
