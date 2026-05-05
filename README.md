@@ -11,6 +11,7 @@ The empty file **`docs/.nojekyll`** turns off Jekyll so GitHub publishes your st
 ## Site layout (`docs/`)
 
 - `docs/index.html` — Home
+- `docs/images/` — static images for the site (e.g. hero photo)
 - `docs/about.html`, `docs/publications.html`, `docs/contact.html` — public pages
 - `docs/data-submission.html` — passphrase-gated upload and validation
 - `docs/portal.html` — redirects to `data-submission.html` (old bookmarks)
