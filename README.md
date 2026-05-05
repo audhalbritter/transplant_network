@@ -4,7 +4,9 @@ Minimal **GitHub Pages** site under [`docs/`](docs/) with a **password-gated dat
 
 ## Enable GitHub Pages
 
-Repository **Settings → Pages → Build and deployment → Branch** → set folder to **`/docs`** on `main`.
+Repository **Settings → Pages → Build and deployment → Deploy from a branch** → choose your default branch and folder **`/docs`**, then **Save**.
+
+The empty file **`docs/.nojekyll`** turns off Jekyll so GitHub publishes your static HTML/JS/CSS directly. Without it, Pages runs Jekyll + a theme and can fail while building files like `assets/css/style.scss`.
 
 ## Site layout (`docs/`)
 
@@ -14,6 +16,7 @@ Repository **Settings → Pages → Build and deployment → Branch** → set fo
 - `docs/js/*.js` — gate, validation, app wiring
 - `docs/data/dictionary.json` — allowed values (optional until populated)
 - `docs/fixtures/sample_valid.csv` — example file for local testing
+- `docs/.nojekyll` — disable Jekyll for static publishing
 
 The same snippets are archived in [`PHASE1_SCAFFOLD.md`](PHASE1_SCAFFOLD.md). After unlocking the portal (default passphrase **`changeme`**), try uploading `docs/fixtures/sample_valid.csv`.
 
