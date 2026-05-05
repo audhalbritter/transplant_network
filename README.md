@@ -10,8 +10,10 @@ The empty file **`docs/.nojekyll`** turns off Jekyll so GitHub publishes your st
 
 ## Site layout (`docs/`)
 
-- `docs/index.html` — public landing
-- `docs/portal.html` — gated uploads and validation
+- `docs/index.html` — Home
+- `docs/about.html`, `docs/publications.html`, `docs/contact.html` — public pages
+- `docs/data-submission.html` — passphrase-gated upload and validation
+- `docs/portal.html` — redirects to `data-submission.html` (old bookmarks)
 - `docs/js/config.js` — gate hash, maintainer email, optional GitHub new-issue URL, `VALIDATION_RULES`
 - `docs/js/*.js` — gate, validation, app wiring
 - `docs/data/dictionary.json` — allowed values (optional until populated)

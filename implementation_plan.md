@@ -134,7 +134,7 @@ You can tune each rule to **BLOCK** vs **WARN** in a single config object so mai
 ### Phase 1 — Site + portal (this repo)
 - GitHub Pages source under **`docs/`** (enable “Deploy from branch” → `/docs`).
 - **Landing** (`docs/index.html`): minimal project blurb + link to the portal.
-- **Portal** (`docs/portal.html`): shared **SHA-256 passphrase gate** (session only); drag-and-drop **CSV / .xlsx**; client-side **validation + cleaning** (`docs/js/`); optional **`docs/data/dictionary.json`** for allowed values (empty arrays = skip check).
+- **Portal** (`docs/data-submission.html`; `portal.html` redirects): shared **SHA-256 passphrase gate** (session only); drag-and-drop **CSV / .xlsx**; client-side **validation + cleaning** (`docs/js/`); optional **`docs/data/dictionary.json`** for allowed values (empty arrays = skip check).
 - **Handoff**: download **cleaned CSV** + **`report.json`** (and optional **ZIP**); on-page **copy-paste email instructions** (`MAINTAINER_EMAIL` in config); optional **“Open GitHub issue”** link if `GITHUB_NEW_ISSUE_BASE_URL` is set (`docs/js/config.js`).
 - **README**: document default dev password hash (`changeme`), how to regenerate the gate hash, Pages settings, and tightening rules later.
 

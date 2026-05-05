@@ -2,80 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Data portal — Transplant network</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <title>Redirect</title>
+  <meta http-equiv="refresh" content="0; url=data-submission.html" />
+  <link rel="canonical" href="data-submission.html" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <p><a href="./index.html">&larr; Back to project page</a></p>
-      <h1>Member data portal</h1>
-      <p>Upload CSV or Excel. Validation runs in your browser; nothing is sent to a server.</p>
-    </header>
-
-    <section class="card" id="gate-card">
-      <h2>Members</h2>
-      <p style="color: var(--muted); font-size: 0.92rem">Shared passphrase (session only).</p>
-      <form id="gate-form" class="gate-form">
-        <label for="pw">Passphrase</label><br />
-        <input id="pw" type="password" autocomplete="current-password" required />
-        <button type="submit" class="btn">Unlock</button>
-        <p id="gate-error" style="color: var(--danger); min-height: 1.25rem"></p>
-      </form>
-    </section>
-
-    <div id="portal-body" class="hidden">
-      <section class="card">
-        <h2>1. Upload</h2>
-        <div id="dropzone" class="dropzone">
-          <input type="file" id="file-input" accept=".csv,.txt,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
-          <p>Drag a file here or <strong>click to choose</strong>.</p>
-          <p style="font-size: 0.8rem">CSV (UTF-8) or Excel (.xlsx).</p>
-        </div>
-        <p id="file-name" style="color: var(--muted); margin-top: 0.75rem"></p>
-      </section>
-
-      <section class="card">
-        <h2>2. Results</h2>
-        <p id="status-line"></p>
-        <div id="blocking-wrap" class="hidden">
-          <h3 style="font-size: 0.95rem; color: var(--danger)">Blocking</h3>
-          <ul id="blocking-list" class="message-list"></ul>
-        </div>
-        <div id="warn-wrap" class="hidden" style="margin-top: 1rem">
-          <h3 style="font-size: 0.95rem; color: var(--warn)">Warnings</h3>
-          <ul id="warn-list" class="message-list"></ul>
-        </div>
-      </section>
-
-      <section class="card hidden" id="handoff-card">
-        <h2>3. Send to maintainers</h2>
-        <p style="color: var(--muted); font-size: 0.9rem">
-          Download the cleaned file and report, then email them (or open a draft GitHub issue).
-        </p>
-        <p>
-          <button type="button" class="btn" id="btn-csv">Download cleaned CSV</button>
-          <button type="button" class="btn btn-secondary" id="btn-json">Download report (JSON)</button>
-          <button type="button" class="btn btn-secondary" id="btn-zip">Download ZIP (both)</button>
-        </p>
-        <p>
-          <button type="button" class="btn btn-ghost" id="btn-mailto">Open email draft</button>
-          <button type="button" class="btn btn-ghost" id="btn-copy-instr">Copy email instructions</button>
-          <a class="btn btn-ghost hidden" id="btn-issue" href="#" target="_blank" rel="noopener">Open GitHub issue draft</a>
-        </p>
-        <pre id="instr-preview" class="instructions hidden" style="margin-top: 1rem"></pre>
-      </section>
-    </div>
-
-    <footer class="site-footer">
-      <p>Edit rules in <code>docs/js/config.js</code>; dictionaries in <code>docs/data/dictionary.json</code>.</p>
-    </footer>
-  </div>
-
-  <script type="module" src="./js/app.js"></script>
+  <p><a href="data-submission.html">Continue to Data submission</a></p>
 </body>
 </html>

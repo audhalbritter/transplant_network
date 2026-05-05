@@ -3,27 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Transplant network</title>
+  <title>Home — Transplant network</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
   <div class="wrap">
-    <header class="site-header">
-      <h1>Transplant network</h1>
-      <p>Project landing — replace with consortium text, publications, and contacts.</p>
+    <header class="site-top">
+      <div class="nav-row">
+        <a class="nav-brand" href="./index.html">Transplant network</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="./index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./publications.html">Publications</a></li>
+            <li><a href="./data-submission.html">Data submission</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section class="card">
-        <h2>About</h2>
-        <p>
-          Static site on GitHub Pages. The <strong>data portal</strong> is a separate page
-          for validated member submissions (see repository README).
+      <section class="home-hero">
+        <h1>International transplant experiment network</h1>
+        <p class="tagline">
+          Coordinated experiments and shared protocols to understand how plant communities respond
+          to environmental change across sites.
         </p>
-        <p><a class="btn btn-ghost" href="./portal.html">Open data portal</a></p>
+        <p>
+          <a class="btn" href="./about.html">About the network</a>
+          <a class="btn btn-ghost" href="./data-submission.html">Member data submission</a>
+        </p>
       </section>
+
+      <div class="home-grid">
+        <a class="home-card" href="./about.html">
+          <h2>About</h2>
+          <p>Who we are, how to join, and how to run a transplant experiment using network protocols.</p>
+        </a>
+        <a class="home-card" href="./publications.html">
+          <h2>Publications</h2>
+          <p>Papers and outputs from network participants and related projects.</p>
+        </a>
+        <a class="home-card" href="./data-submission.html">
+          <h2>Data submission</h2>
+          <p>Members: validate and submit structured data (passphrase required).</p>
+        </a>
+        <a class="home-card" href="./contact.html">
+          <h2>Contact</h2>
+          <p>Reach the coordinating team by email or GitHub.</p>
+        </a>
+      </div>
     </main>
+
     <footer class="site-footer">
-      <p>Edit <code>docs/index.html</code> for public content.</p>
+      <p>Site hosted on GitHub Pages. Update content in the <code>docs/</code> folder of this repository.</p>
     </footer>
   </div>
 </body>
