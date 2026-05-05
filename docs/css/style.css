@@ -253,9 +253,11 @@ a {
 }
 
 .home-photo {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  max-width: 100%;
+  max-width: min(100%, 20rem);
+  width: 100%;
+  align-self: center;
 }
 
 .home-photo img {
