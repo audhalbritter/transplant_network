@@ -11,7 +11,19 @@ The empty file **`docs/.nojekyll`** turns off Jekyll so GitHub publishes your st
 ## Site layout (`docs/`)
 
 - `docs/index.html` — Home
-- `docs/images/` — static images for the site (e.g. hero photo)
+- `docs/images/` — static images for the site (e.g. hero photo). The home hero uses **`DJI_0126-web.jpg`** (~640 px wide) for faster loads; **`DJI_0126.jpg`** is the full-resolution original (~3000 px) if you need it offline.
+
+### Home page image sizing
+
+- **Small inline photo** (like the current home layout): export about **600–900 px** wide; JPEG **~100–300 KB** is plenty. The CSS shows it at **~280 px** wide, so **640 px** source is enough for sharp “retina”.
+- **Half-width hero**: about **1200–1600 px** wide if it should look very sharp at ~600 px on screen.
+- **Full-bleed banner**: about **1600–2000 px**; you almost never need **3000 px+** for web.
+
+Use JPEG quality roughly **75–85%**. The site uses **`DJI_0126-web.jpg`** (~640 px, small file) on the home page; **`DJI_0126.jpg`** is the original. To rebuild the web copy after changing the original:
+
+`sips --resampleWidth 640 docs/images/DJI_0126.jpg --out docs/images/DJI_0126-web.jpg`
+
+Then keep **`src="./images/DJI_0126-web.jpg"`** in `docs/index.html` (update `width` / `height` to match output).
 - `docs/about.html`, `docs/publications.html`, `docs/contact.html` — public pages
 - `docs/data-submission.html` — passphrase-gated upload and validation
 - `docs/portal.html` — redirects to `data-submission.html` (old bookmarks)

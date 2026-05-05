@@ -255,14 +255,15 @@ a {
 .home-photo {
   margin: 0 auto;
   padding: 0;
-  max-width: min(100%, 20rem);
-  width: 100%;
   align-self: center;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .home-photo img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: min(100%, 280px);
   height: auto;
   border-radius: 12px;
   border: 1px solid var(--border);
